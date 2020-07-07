@@ -8,7 +8,7 @@ router.use("/api");
 // no api routes are hit send the react app
 
 router.use(function(req, res){
-    res.sendFile(path.join(_dirname, "../client/public/index.html"));
+    res.sendFile(path.join(_dirname, "../client/build/index.html"));
 });
 
 

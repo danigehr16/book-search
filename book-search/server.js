@@ -19,9 +19,6 @@ app.use(routes);
 // connect to mongo db
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks", {useNewUrlParser: true});
 
-module.exports = {
-  Book: require("./book")
-};
 
 // Send every other request to the React app
 // Define any API routes before this runs
